@@ -1,0 +1,346 @@
+/**************************************** Reset & Default Setting **************************************/
+
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+ol, ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.clr{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+html{
+	height: inherit;
+}
+body{
+	background: #f8f8f8;
+	font-size: 14px;
+	color: #2c3d48;
+	font-weight: lighter;
+}
+.mainBody{
+	margin-top: 64px !important;
+}
+.contentContainer{
+	padding: 14px 14px 14px 10px;
+}
+
+
+/**************************************** Top Bar Starts **************************************/
+
+.firstRow{
+    padding-bottom: 0px !important;
+	position: fixed !important;
+	z-index: 99;
+	left: 0px;
+}
+.secondRow{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.topBarTitle{
+	background: #fff;
+    color: #000;
+}
+.topBarTitle h3{
+	text-align: center;
+	line-height: 50px;
+	font-weight: normal;
+}
+.topBar{
+	background: #fff;
+	text-align: center;
+}
+.topBar h3{
+	color: #000;
+	line-height: 50px;
+	font-weight: normal;
+}
+
+.hover {
+	text-align: center;
+}
+
+.hover :hover{
+
+	box-shadow: 0 2px 2px rgba(68, 68, 68, 0.15);
+
+
+	/* box-shadow: 0 0 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22); */
+
+
+}
+
+.highlighted{
+	box-shadow: 0 2px 2px rgba(68, 68, 68, 0.15);
+}
+/**************************************** Side Bar Starts **************************************/
+/*
+.sideBar{
+  height: calc(100vh - 50px);
+  background: #004212;
+  position: fixed !important;
+  z-index: 9;
+  margin: 64px 0px 0px 5px !important;
+  overflow-y: auto;
+}
+.sideBarMenu{
+	margin: 10px -14px 20px -5px;
+}
+.sideBarMenu li a{
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	padding: 8px 10px 8px 15px;
+	color: #fff;
+}
+.sideBarMenu > li > a:hover,
+.sideBarMenu > li > ul > li > a:hover{
+	background: rgba(0,0,0,0.2);
+}
+.sideBarMenu li ul{
+	display: none;
+}
+.sideBarMenu li ul.activeItem{
+	display: block;
+}
+.sideBarMenu li ul li a{
+	padding-left: 30px;
+}
+.activeMenu{
+	background: rgba(0,0,0,0.3);
+	border-right: 3px solid #004212;
+	font-weight: normal;
+}*/
+
+
+/**************************************** Login Page Starts **************************************/
+
+.loginSectionCon{
+	background: #FEFFEF;
+    margin: 3% auto;
+    max-width: 400px;
+    height: auto;
+	border-radius: 10px;
+	padding-top: 3px;
+}
+
+.loginSectionCon h2{
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 20px 0px;
+	display: block;
+	text-align: center;
+	color: #212121;
+}
+.logFieldContainer{
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+.logFieldContainer p{
+	margin: 0px;
+	color: #000;
+}
+
+.logFieldContainer input{
+	color: #000
+}
+.logFieldContainer .loginField{
+	padding: 9px 10px;
+	border: 1px solid #E9ECD2;
+	border-radius: 5px;
+	background: #FEFFEF;
+	width: 100%;
+	margin: 5px 0px 15px;
+}
+
+
+.regCheckbox{
+	margin-right: 20px;
+}
+.regCheckboxTitle{
+	margin-right: 20px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+
+
+/************************************   others  *************************************/
+.dropdownContent{
+  margin-bottom: 15px;
+}
+
+.actionButtonContainer .button{
+	margin: 20px auto 0;
+	display: block;
+}
+
+
+
+/************************************   others  *************************************/
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #6c856d;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+
+.cardItem{
+
+    padding: 5px 5px;
+    width: 33%;
+	float: left;
+	padding-top: 10px;
+}
+
+/* .fullCardItem{
+	
+		padding: 5px 5px;
+		width: 33%;
+		float: center;
+		
+	} */
+
+
+
+.customContain{
+	margin-top: 16px;
+	align-content: center;
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-bottom: 20px;
+}
+
+.center{
+	text-align: center;
+}
+
+.sidebarContainer{
+	margin-top:40px;
+}
+
+.cardContainer{
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.sqeeze{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.cardHover{
+	min-height: 240px;
+	background: #fff;
+	text-align: center;
+	font-size: 36px;
+	padding: 15px 0px;
+	color: black;
+	/*border-radius: 3px 3px 0px 0px;*/
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  .cardHover:hover {
+	  color: black;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  }
+  .cardHover p{
+	font-size: 14px;
+	margin: 0;
+  }
+
+
+#particles-js {
+	position: absolute;
+	pointer-events: none;
+  }
+
+  .particle-wrap {
+	background-color: #12171d;
+	position: absolute;
+	pointer-events: none;
+	width: 99%;
+	height: 98%;
+  }
+
+  .userChatBtn{
+    position: fixed;
+    bottom: 5vh;
+    right: 2.5vw;
+	z-index: 999;
+
+}
+
+.userChatBox{
+    position: fixed;
+    bottom: 1vh;
+    right: 6vw;
+	z-index: 99;
+	width: 220px;
+	height: 30px;
+
+}
+
+.fullpage{
+	height: 710px;
+	width: 100%;
+}
+
+.homeParticleBackground{
+	background: radial-gradient(rgb(27, 201, 142), rgb(11, 90, 63));
+	 z-index: 5;
+	 width:100%;
+	 height:100%;
+	transform: translate3d(0px, 0px, 0px);
+}
+
+.detailContent{
+	display: none;
+}
+
+.bottomContentHide{
+	visibility: hidden
+}
+
+
+
+
+pusher{
+	min-height: 30px;
+}
+
+.noteFormContainer{
+	margin-top: 40px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 50px;
+}
