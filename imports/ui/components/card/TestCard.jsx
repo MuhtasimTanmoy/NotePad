@@ -12,7 +12,8 @@ export default class TestCard extends React.Component{
     this.state={
       hover:false,
       starred:false,
-      editing:false
+      editing:false,
+      color:"ui raised fluid grey card"
     };
   }
 
@@ -24,6 +25,13 @@ export default class TestCard extends React.Component{
     this.setState({
       hover:true
     });
+  }
+
+
+  componentDidMount(){
+    $('.ui.dropdown.item')
+    .dropdown()
+    ;
   }
 
 
@@ -211,7 +219,7 @@ return content;
   
 
 
-        <div className="ui raised fluid red card ">
+        <div className={this.state.color}>
   <div className="content">
   
     
@@ -224,10 +232,12 @@ return content;
     {!this.state.editing?this.showContent():this.showEditableContent()}
 
     
- 
+    </div>
+
+    
   <div className="extra content"  >
 
-  </div>
+ 
   {!this.state.editing &&
     <span className="left floated">
 {this.props.createdAt.toLocaleDateString()+" "+this.props.createdAt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
@@ -239,12 +249,38 @@ return content;
 
 
     <div  id="bottomContent" className={hovered}>
+
+
     <div className="right floated" style={{padding:"5px"}}>
+    <div className="ui dropdown item">
+
       <i className="add square large grey icon"></i>
+      <div className="menu">
+        <div className="item ui red inverted segment" onClick={()=>{
+          this.setState({
+            color:"ui raised fluid red card"
+          });
+        }}></div>
+        <div className="item ui yellow inverted segment" onClick={()=>{
+          this.setState({
+            color:"ui raised fluid yellow card"
+
+          });
+        }}></div>
+        <div className="item ui green inverted segment" onClick={()=>{
+          this.setState({
+            color:"ui raised fluid green card"
+
+          });
+        }}></div>
+
+      </div>
+      </div>
     </div>
 
     <div className="right floated" style={{padding:"5px"}} onClick={this.deleteThis.bind(this)}>
       <i className="trash large grey icon"></i>
+      
     </div>
     </div>
   </div>
