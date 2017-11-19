@@ -14,21 +14,16 @@ export default class Login extends Component{
     let password = ReactDOM.findDOMNode(this.refs.password).value;
     console.log(code, password);
     Meteor.loginWithPassword(code, password, (error) =>{
-      if(error)window.alert("School code and password don't match.");
+      if(error)window.alert("Error.");
       else {
         $('.ui.page.dimmer')
         .dimmer('hide');
+
+        FlowRouter.go('/dashboard');
+        
       };
     });
-    Meteor.call("user.online",{},function(error,result){
-      if(error){
-        console.log("error", error);
-        window.alert(error.message)
-      }
-      if(result){
-        console.log(result);
-     }
-    });
+ 
   }
 
   render(){

@@ -190,6 +190,22 @@ body{
 
 /************************************   others  *************************************/
 
+
+.startPage{
+
+	width:100%;
+	height:auto;
+	background: #fff;
+	
+}
+
+
+ .startPage h1{
+	margin-left: 46%;
+	padding-top: 23%;
+	padding-bottom:23%;
+
+} 
 #snackbar {
     visibility: hidden;
     min-width: 250px;

@@ -172,7 +172,7 @@ random(){
 
 showContent(){
   var content=
-  <div className="description" style={{minHeight:"110px",maxHeight:"110px",overflow:"hidden"}}>
+  <div className="description"   onClick={this.showFull.bind(this)} style={{minHeight:"110px",maxHeight:"110px",overflow:"hidden"}}>
   
   <p>
   {this.props.text}
@@ -184,7 +184,7 @@ return content;
 
 showEditableContent(){
   var content=
-  <div className="description" style={{minHeight:"110px",overflow:"hidden"}}> 
+  <div className="description"   style={{minHeight:"110px",overflow:"hidden"}}> 
   <div className="ui form field input">
   <textarea ref="text" placeholder="Content"  style={{width:"400px" }} rows="8" defaultValue={this.props.text}></textarea>
   </div>
@@ -205,7 +205,7 @@ return content;
 
 
     return(
-        <div id="fullCard" className="cardItem" onClick={this.showFull.bind(this)}  onMouseOver={this.showBottom.bind(this)} onMouseLeave={this.hideBottom.bind(this)}>
+        <div id="fullCard" className="cardItem"   onMouseOver={this.showBottom.bind(this)} onMouseLeave={this.hideBottom.bind(this)}>
         <div id="snackbar">Note saved.</div>
 
   

@@ -57,7 +57,7 @@ export default createContainer(  (props) => {
     Meteor.subscribe('notes');
     return{
         user:Meteor.user(),
-        notes: Notes.find({},{ sort: { createdAt: -1 } }).fetch(),
+        notes: Notes.find({createdBy:Meteor.user()._id},{ sort: { createdAt: -1 } }).fetch(),
 
     };
 }, AllNotes);

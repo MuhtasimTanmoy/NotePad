@@ -31,7 +31,7 @@ export default class RegisterPage extends Component{
       if(result){
          console.log(result);
          Meteor.loginWithPassword(data.username, data.password, (error) =>{
-           FlowRouter.go('/');
+           FlowRouter.go('/dashboard');
          })
       }
     });
