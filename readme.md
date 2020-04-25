@@ -1,7 +1,7 @@
 
 # Note-Web
 
-A DDP Client android and note taking app.
+A meteor react webapp.
 
 - **Website Link:**  
     - https://noteapp.cf
