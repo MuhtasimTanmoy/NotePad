@@ -7,7 +7,7 @@
   "dependencies": {
     "autoprefixer": "^6.3.1",
     "babel-runtime": "^6.20.0",
-    "bcrypt": "^1.0.2",
+    "bcrypt": "^5.0.0",
     "meteor-node-stubs": "~0.2.4",
     "react": "^15.5.4",
     "jquery": "^3.2.1",
